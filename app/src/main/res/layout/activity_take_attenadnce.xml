@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.project.muthuraman.academics.TakeAttenadnceActivity">
+
+
+    <Button
+        android:id="@+id/tkat"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_below="@+id/textView13"
+        android:layout_marginEnd="75dp"
+        android:layout_marginTop="26dp"
+        android:background="#3f51b5"
+        android:text="Create QR code" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_below="@+id/textView13"
+        android:layout_marginEnd="75dp"
+        android:layout_marginTop="26dp"
+        android:background="#3f51b5"
+        android:text="Exit class and unlock student phones"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="102dp"
+        android:text="Class ends at :"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:id="@+id/QRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tkat"
+        android:layout_marginTop="129dp" />
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.project.muthuraman.academics.SignupActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/sname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="22dp"
+                android:text="Hi,"
+                android:textAppearance="@android:style/TextAppearance.Material.Display3"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="25dp"
+                tools:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="15dp"
+                android:text="We do love to know more about you!"
+                android:textAppearance="@android:style/TextAppearance.Material.Headline"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/sregno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/srpw"
+                android:layout_below="@+id/srpw"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Registration Number"
+                android:inputType="textShortMessage"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/srpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/smbno"
+                android:layout_below="@+id/spw"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Repeat Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:selectAllOnFocus="false"
+                android:singleLine="true"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/smbno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sname"
+                android:layout_below="@+id/sname"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/spw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sregno"
+                android:layout_below="@+id/smbno"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/teacher"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/spw"
+                android:layout_alignStart="@+id/stud"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent"
+                android:elevation="0dp"
+                android:text="     I am a Teacher"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/stud"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sname"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:elevation="0dp"
+                android:text="     I am a Student"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/stud"
+                android:layout_below="@+id/sname"
+                android:elevation="10dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/student" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/spw"
+                android:layout_alignTop="@+id/teacher"
+                android:elevation="4dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/teacher" />
+
+            <Button
+                android:id="@+id/signup"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/sregno"
+                android:layout_below="@+id/sregno"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:elevation="0dp"
+                android:text="Signup"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
